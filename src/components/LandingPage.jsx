@@ -56,7 +56,7 @@ const featuredProducts = [
     price: "₦1,200,000",
     tag: "New",
     image:
-      "https://sellatease.com/public-blog/wp-content/uploads/2023/09/Apple-iPhone-15-Pro-lineup-natural-titanium-geo_inline.jpg.large_-653x470.webp",
+      "https://external-preview.redd.it/iphone-15-pro-models-again-rumored-to-see-100-price-increase-v0-bmkZIPOlgKpwB6ScGNKSjvparBKuGEK541ONVfvoTIo.jpg?auto=webp&s=b9791d15d8d6d3f12b2cbdc0968e6d6a7a61b95d",
   },
   {
     name: "Samsung Galaxy S24 Ultra",
@@ -70,7 +70,7 @@ const featuredProducts = [
     price: "₦650,000",
     tag: "UK Used",
     image:
-      "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=400&h=300&fit=crop",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYRrMz700CpV7ipdm6AlwI_4FHXasgwWoLuxR_3vVVesOF5QqkbbwpSg&s=10",
   },
   {
     name: "Tecno Camon 20 (Nigeria Used)",
