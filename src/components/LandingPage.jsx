@@ -300,11 +300,11 @@ const LandingPage = () => {
                 Since 2010 – Trusted Phone Vendor • Trade‑in Available
               </div>
               <h1 className={styles.heroTitle}>
-                <span className={styles.highlight}>Global</span> Phones
+                <span className={styles.highlight}>C TO C Global</span> Phones
                 <br />& Accessories
               </h1>
               <p className={styles.heroDesc}>
-                Your one‑stop shop for <strong>brand new</strong>,{" "}
+                Your one‑stop showroom for <strong>brand new</strong>,{" "}
                 <strong>UK used</strong>, and <strong>Nigeria used</strong>{" "}
                 phones. Quality guaranteed.
               </p>
@@ -347,7 +347,7 @@ const LandingPage = () => {
                   <span className={styles.floatingIcon}>
                     <FaMobileAlt />
                   </span>
-                  <span className={styles.floatingText}>iPhone 15 Pro</span>
+                  <span className={styles.floatingText}>New Phones</span>
                 </div>
                 <div className={styles.floatingCard}>
                   <span className={styles.floatingIcon}>
