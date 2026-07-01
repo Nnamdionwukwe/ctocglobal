@@ -120,14 +120,17 @@ const LandingPage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Theme handler
+  // Theme handler – now with logging
   useEffect(() => {
+    console.log("Theme changed to:", theme);
     if (theme === "light") {
       document.body.classList.add("light-theme");
       localStorage.setItem("theme", "light");
+      console.log("✅ light-theme class added to body");
     } else {
       document.body.classList.remove("light-theme");
       localStorage.setItem("theme", "dark");
+      console.log("✅ light-theme class removed from body");
     }
   }, [theme]);
 
@@ -189,8 +192,14 @@ const LandingPage = () => {
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
   const closeNav = () => setIsNavOpen(false);
-  const toggleTheme = () =>
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  const toggleTheme = () => {
+    console.log("🔄 Toggle clicked, current theme:", theme);
+    setTheme((prev) => {
+      const newTheme = prev === "dark" ? "light" : "dark";
+      console.log("🔄 Setting theme to:", newTheme);
+      return newTheme;
+    });
+  };
 
   const phoneNumber = "08032835371";
   const mapLink = "https://maps.app.goo.gl/mM4ffw5RXScfbaLEA?g_st=ic";
@@ -242,6 +251,7 @@ const LandingPage = () => {
             </li>
             <li>
               <button
+                type="button"
                 className={`${styles.themeToggle} ${theme === "light" ? styles.themeToggleLight : ""}`}
                 onClick={toggleTheme}
                 aria-label="Toggle theme"
