@@ -222,7 +222,11 @@ const LandingPage = () => {
       >
         <div className={styles.container}>
           <a href="#" className={styles.navbarBrand}>
-            <span className={styles.brandIcon}>🌐</span>
+            <img
+              className={styles.footerLogo}
+              src="/cLogo.PNG"
+              alt="Global Phones Logo"
+            />
             <span className={styles.brandName}>Global Phones</span>
           </a>
 
@@ -574,7 +578,11 @@ const LandingPage = () => {
         <div className={styles.container}>
           <div className={styles.footerInner}>
             <div className={styles.footerBrand}>
-              <span className={styles.brandIcon}>🌐</span>
+              <img
+                className={styles.footerLogo}
+                src="/cLogo.PNG"
+                alt="Global Phones Logo"
+              />
               <span>Global Phones & Accessories</span>
             </div>
             <div className={styles.footerCopy}>

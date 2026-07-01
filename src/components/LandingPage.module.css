@@ -1146,3 +1146,7 @@ body.light-theme .tradeCard:hover {
   border-color: var(--accent-1);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
 }
+
+.footerLogo {
+  width: 40px;
+}
