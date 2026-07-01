@@ -56,7 +56,7 @@ const featuredProducts = [
     price: "₦1,200,000",
     tag: "New",
     image:
-      "https://images.unsplash.com/photo-1696446701796-da61225697cc?w=400&h=300&fit=crop",
+      "https://sellatease.com/public-blog/wp-content/uploads/2023/09/Apple-iPhone-15-Pro-lineup-natural-titanium-geo_inline.jpg.large_-653x470.webp",
   },
   {
     name: "Samsung Galaxy S24 Ultra",
@@ -297,7 +297,7 @@ const LandingPage = () => {
             <div className={styles.heroContent}>
               <div className={styles.heroBadge}>
                 <span className={styles.pulseDot}></span>
-                Since 2010 – Trusted Phone Store • Trade‑in Available
+                Since 2010 – Trusted Phone Vendor • Trade‑in Available
               </div>
               <h1 className={styles.heroTitle}>
                 <span className={styles.highlight}>Global</span> Phones
@@ -403,7 +403,7 @@ const LandingPage = () => {
                 <img src={prod.image} alt={prod.name} loading="lazy" />
                 <span className={styles.productTag}>{prod.tag}</span>
                 <h4>{prod.name}</h4>
-                <span className={styles.productPrice}>{prod.price}</span>
+                {/* <span className={styles.productPrice}>{prod.price}</span> */}
                 <a
                   href={whatsappLink}
                   target="_blank"
