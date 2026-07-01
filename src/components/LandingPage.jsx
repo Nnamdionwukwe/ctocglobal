@@ -347,7 +347,7 @@ const LandingPage = () => {
                   <span className={styles.floatingIcon}>
                     <FaMobileAlt />
                   </span>
-                  <span className={styles.floatingText}>New Phones</span>
+                  <span className={styles.floatingText}>Brand New Phones</span>
                 </div>
                 <div className={styles.floatingCard}>
                   <span className={styles.floatingIcon}>
