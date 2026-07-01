@@ -1071,3 +1071,76 @@ body.light-theme .productCta {
     font-size: 1.6rem;
   }
 }
+
+/* ===== TRADE / SWAP SECTION ===== */
+.tradeSection {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+.tradeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+.tradeCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tradeCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(26, 115, 232, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+.tradeIcon {
+  font-size: 2.8rem;
+  color: var(--accent-1);
+  margin-bottom: 16px;
+  display: block;
+}
+.tradeCard h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.tradeCard p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.tradeCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: var(--accent-gradient);
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.tradeCta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(26, 115, 232, 0.4);
+}
+
+/* light theme overrides for trade cards */
+body.light-theme .tradeCard {
+  background: #ffffff;
+  border: 1px solid #e0e8f5;
+}
+body.light-theme .tradeCard:hover {
+  border-color: var(--accent-1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}

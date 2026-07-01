@@ -19,6 +19,9 @@ import {
   FaTabletAlt,
   FaLaptop,
   FaHeadphones,
+  FaExchangeAlt,
+  FaMoneyBillWave,
+  FaBoxOpen,
 } from "react-icons/fa";
 import styles from "./LandingPage.module.css";
 
@@ -75,6 +78,25 @@ const featuredProducts = [
     tag: "Nigeria Used",
     image:
       "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=300&fit=crop",
+  },
+];
+
+// ─── Trade / Swap Services ──────────────────────────────────
+const tradeServices = [
+  {
+    icon: <FaExchangeAlt />,
+    title: "Trade‑In",
+    desc: "Swap your old phone for a new one – get the best value instantly.",
+  },
+  {
+    icon: <FaMoneyBillWave />,
+    title: "Sell Used Phones",
+    desc: "Turn your used device into cash. Fair prices, quick payment.",
+  },
+  {
+    icon: <FaBoxOpen />,
+    title: "Sell Brand New Phones",
+    desc: "We buy sealed, unused phones – even if you just changed your mind.",
   },
 ];
 
@@ -204,6 +226,11 @@ const LandingPage = () => {
               </a>
             </li>
             <li>
+              <a href="#trade" onClick={closeNav}>
+                Swap & Trade
+              </a>
+            </li>
+            <li>
               <a href="#about" onClick={closeNav}>
                 About
               </a>
@@ -256,7 +283,7 @@ const LandingPage = () => {
             <div className={styles.heroContent}>
               <div className={styles.heroBadge}>
                 <span className={styles.pulseDot}></span>
-                Since 2010 – Trusted Phone Store
+                Since 2010 – Trusted Phone Store • Trade‑in Available
               </div>
               <h1 className={styles.heroTitle}>
                 <span className={styles.highlight}>Global</span> Phones
@@ -322,9 +349,9 @@ const LandingPage = () => {
                 </div>
                 <div className={styles.floatingCard}>
                   <span className={styles.floatingIcon}>
-                    <FaHeadphones />
+                    <FaExchangeAlt />
                   </span>
-                  <span className={styles.floatingText}>Accessories</span>
+                  <span className={styles.floatingText}>Trade‑in</span>
                 </div>
               </div>
             </div>
@@ -370,6 +397,41 @@ const LandingPage = () => {
                   className={styles.productCta}
                 >
                   <FaWhatsapp /> Enquire
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Swap & Trade ─── */}
+      <section
+        className={`${styles.tradeSection} ${styles.sectionReveal}`}
+        id="trade"
+      >
+        <div className={styles.container}>
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionTag}>🔄 Swap & Trade</span>
+            <h2 className={styles.sectionTitle}>Upgrade or Sell with Ease</h2>
+            <p className={styles.sectionSub}>
+              Turn your old device into cash or a brand new phone – we make it
+              simple.
+            </p>
+          </div>
+
+          <div className={styles.tradeGrid}>
+            {tradeServices.map((service, idx) => (
+              <div key={idx} className={styles.tradeCard}>
+                <span className={styles.tradeIcon}>{service.icon}</span>
+                <h3>{service.title}</h3>
+                <p>{service.desc}</p>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.tradeCta}
+                >
+                  <FaWhatsapp /> Inquire Now
                 </a>
               </div>
             ))}
