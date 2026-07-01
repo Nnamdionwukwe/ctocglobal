@@ -77,7 +77,7 @@ const featuredProducts = [
     price: "₦280,000",
     tag: "Nigeria Used",
     image:
-      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=300&fit=crop",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6eI5uPWLvwUwvZI6tTswzSnA4vl0AUjBMs2vfZqSg1A&s=10",
   },
 ];
 
