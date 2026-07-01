@@ -353,7 +353,7 @@ const LandingPage = () => {
                   <span className={styles.floatingIcon}>
                     <FaStore />
                   </span>
-                  <span className={styles.floatingText}>UK Used Stock</span>
+                  <span className={styles.floatingText}>UK Used Phones</span>
                 </div>
                 <div className={styles.floatingCard}>
                   <span className={styles.floatingIcon}>
