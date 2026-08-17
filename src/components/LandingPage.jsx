@@ -586,7 +586,8 @@ const LandingPage = () => {
               <span>Global Phones & Accessories</span>
             </div>
             <div className={styles.footerCopy}>
-              &copy; 2026 Global Phones — Abuja's Trusted Phone Store
+              &copy; {new Date().getFullYear()} Global Phones — Abuja's Trusted
+              Phone Store
             </div>
             <div className={styles.footerSocials}>
               <a
