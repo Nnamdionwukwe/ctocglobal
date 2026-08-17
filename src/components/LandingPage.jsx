@@ -619,6 +619,7 @@ const LandingPage = () => {
           <div className={styles.footerCopy2}>
             powered by{" "}
             <a
+              className={styles.footerLink}
               href="https://www.gestechcom.com"
               target="_blank"
               rel="noopener noreferrer"
