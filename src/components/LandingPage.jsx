@@ -615,6 +615,17 @@ const LandingPage = () => {
               </a>
             </div>
           </div>
+          <div className={styles.footerCopy2}>
+            powered by{" "}
+            <a
+              href="https://www.gestechcom.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              GesTechCom Technologies
+            </a>
+          </div>
         </div>
       </footer>
     </div>

@@ -924,6 +924,13 @@ body.light-theme .productCta {
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+.footerCopy2 {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
 .footerSocials {
   display: flex;
   gap: 14px;
